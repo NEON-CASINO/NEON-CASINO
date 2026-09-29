@@ -1,25 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<section>
-<h2>🏆 RECENT WINNERS</h2>
+<title>NEON CASINO</title>
+
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #050505;
+color: white;
+min-height: 100vh;
+}
+
+header {
+background: #080808;
+border-bottom: 1px solid #19ff5c;
+padding: 22px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 0 20px rgba(25,255,92,0.25);
+}
+
+.logo {
+color: #19ff5c;
+font-size: 28px;
+font-weight: bold;
+letter-spacing: 2px;
+text-shadow: 0 0 12px #19ff5c;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin-left: 20px;
+}
+
+nav a:hover {
+color: #19ff5c;
+}
+
+.hero {
+text-align: center;
+padding: 90px 20px;
+background:
+radial-gradient(circle at center, rgba(25,255,92,0.15), transparent 55%);
+}
+
+.hero h1 {
+font-size: 55px;
+color: #19ff5c;
+text-shadow: 0 0 25px #19ff5c;
+margin-bottom: 15px;
+}
+
+.hero p {
+color: #bbb;
+font-size: 18px;
+margin-bottom: 30px;
+}
+
+.button {
+display: inline-block;
+background: #19ff5c;
+color: #000;
+padding: 14px 28px;
+border-radius: 8px;
+font-weight: bold;
+text-decoration: none;
+box-shadow: 0 0 20px rgba(25,255,92,0.5);
+transition: 0.2s;
+}
+
+.button:hover {
+transform: scale(1.05);
+box-shadow: 0 0 30px rgba(25,255,92,0.8);
+}
+
+section {
+padding: 55px 8%;
+}
+
+.title {
+color: #19ff5c;
+font-size: 30px;
+margin-bottom: 25px;
+text-align: center;
+text-shadow: 0 0 10px rgba(25,255,92,0.5);
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+gap: 20px;
+}
+
+.card {
+background: #0d0d0d;
+border: 1px solid #1b1b1b;
+border-radius: 12px;
+padding: 25px;
+text-align: center;
+transition: 0.2s;
+}
+
+.card:hover {
+border-color: #19ff5c;
+box-shadow: 0 0 20px rgba(25,255,92,0.2);
+transform: translateY(-4px);
+}
+
+.card h3 {
+color: #19ff5c;
+margin-bottom: 12px;
+}
+
+.card p {
+color: #aaa;
+margin-bottom: 18px;
+}
+
+.winner {
+border-left: 3px solid #19ff5c;
+}
+
+.community {
+text-align: center;
+background: #080808;
+border-top: 1px solid #111;
+border-bottom: 1px solid #111;
+}
+
+footer {
+text-align: center;
+padding: 30px;
+color: #666;
+font-size: 14px;
+}
+
+.status {
+display: inline-block;
+color: #19ff5c;
+font-size: 13px;
+margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+header {
+flex-direction: column;
+gap: 15px;
+}
+
+nav a {
+margin: 0 7px;
+}
+
+.hero h1 {
+font-size: 40px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">NEON CASINO</div>
+
+<nav>
+<a href="#giveaways">Giveaways</a>
+<a href="#winners">Winners</a>
+<a href="#community">Community</a>
+</nav>
+</header>
+
+<main>
+
+<section class="hero">
+<h1>NEON CASINO</h1>
+
+<p>
+Welcome to the official NEON CASINO community.
+</p>
+
+<a class="button" href="#giveaways">
+VIEW GIVEAWAYS
+</a>
+</section>
+
+
+<section id="giveaways">
+
+<h2 class="title">🎁 ACTIVE GIVEAWAYS</h2>
 
 <div class="cards">
+
 <div class="card">
+<span class="status">● ACTIVE</span>
+
+<h3>Giveaway #1</h3>
+
+<p>
+Community giveaway
+</p>
+
+<a class="button" href="#community">
+ENTER
+</a>
+</div>
+
+
+<div class="card">
+<span class="status">● ACTIVE</span>
+
+<h3>Giveaway #2</h3>
+
+<p>
+New prize coming soon
+</p>
+
+<a class="button" href="#community">
+ENTER
+</a>
+</div>
+
+
+<div class="card">
+<span class="status">● SOON</span>
+
+<h3>Giveaway #3</h3>
+
+<p>
+Check back soon
+</p>
+
+<a class="button" href="#community">
+DETAILS
+</a>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="winners">
+
+<h2 class="title">🏆 RECENT WINNERS</h2>
+
+<div class="cards">
+
+<div class="card winner">
 <h3>Winner #1</h3>
-<p>Prize: Coming Soon</p>
+<p>Prize coming soon</p>
 </div>
 
-<div class="card">
+<div class="card winner">
 <h3>Winner #2</h3>
-<p>Prize: Coming Soon</p>
+<p>Prize coming soon</p>
 </div>
+
+<div class="card winner">
+<h3>Winner #3</h3>
+<p>Prize coming soon</p>
 </div>
+
+</div>
+
 </section>
 
-<section>
-<h2>💬 COMMUNITY</h2>
-<p>Join the NEON CASINO Discord for announcements and giveaways.</p>
-<button>JOIN DISCORD</button>
+
+<section id="community" class="community">
+
+<h2 class="title">💬 COMMUNITY</h2>
+
+<p style="color:#aaa; margin-bottom:25px;">
+Join the NEON CASINO community for announcements and giveaways.
+</p>
+
+<!-- Replace # with your actual Discord invite -->
+<a class="button" href="#">
+JOIN DISCORD
+</a>
+
 </section>
+
+</main>
+
 
 <footer>
 NEON CASINO © 2026
